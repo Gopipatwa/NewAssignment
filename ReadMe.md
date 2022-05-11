@@ -6,6 +6,10 @@ cd myvenv\Scripts\activate  --Enter
 - python manage.py runserver
 
 
+Excel Data Must have column name  *Address*
+
+After click on submit button now it will generate new excel file with latitude and logitude with name *response.xlsx*
+
 module use in this app
 - Django  -- For Creating application
 - geopy  -- For getting address latitude and logitude

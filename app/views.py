@@ -25,7 +25,7 @@ class FileView(View):
         data['Longitude'] = data.apply(lambda row: self.geolocator.geocode(str(row.Address)).longitude,axis=1)
         
         response = HttpResponse(content_type='application/vnd.ms-excel')
-        response['Content-Disposition'] = 'attachment; filename="response.xls"'
+        response['Content-Disposition'] = 'attachment; filename="response.xlsx"'
         data.to_excel(response,index=False)
         # print(request.FILES['file'])
         return response
